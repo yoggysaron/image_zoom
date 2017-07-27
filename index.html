@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.animate-shadow.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min"></script>
+</head>
+<body>
+
+<!-- AUDIO ASSET -->
+
+<audio id="cursor-song-1" src="song/cursor_move.mp3"> </audio>
+<audio id="cursor-song-2" src="song/cursor_move.mp3"> </audio>
+<audio id="cursor-song-3" src="song/cursor_move.mp3"> </audio>
+<audio id="cursor-ready-1" src="song/cursor_ready.mp3"> </audio>
+<audio id="cursor-ready-2" src="song/cursor_ready.mp3"> </audio>
+<audio id="cursor-ready-3" src="song/cursor_ready.mp3"> </audio>
+
+
+	<header>
+		
+		<div id="header">
+
+			<form>
+				<input type="text" name="" placeholder="Entrez votre recherche ici">
+				<input type="submit" name="recherche">
+			</form>
+				<ul id="menu-principale">
+					<li class="liste-menu-principale" id="li-1" rel="cursor-song-1">Final Fantasy VII</li>
+					<li class="liste-menu-principale" id="li-2" rel="cursor-song-2">Final Fantasy XII</li>
+					<li class="liste-menu-principale" id="li-3" rel="cursor-song-3">Final Fantasy XV </li>
+				</ul>	
+			</div>
+
+	</header>
+
+
+	<div id="block-1">
+		
+		<p class="onglet"> FIGURE </p>
+		<p class="description-1"> <span> Play art kay Cloud </span> </p>
+	</div>
+	<div id="block-2">
+		<p class="onglet"> FIGURE </p>
+		<p class="description-2"> <span> Play art kay Barret </span></p>
+	</div>
+
+<script>
+
+// CURSOR SONG
+
+	// HOVER
+$(document).ready(function(){
+    $("#li-1").hover(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+    });
+});
+
+$(document).ready(function(){
+    $("#li-2").hover(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+    });
+});
+
+$(document).ready(function(){
+    $("#li-3").hover(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+    });
+});
+
+	// CLICK
+
+$(document).ready(function(){
+    $("#li-1").click(function(){
+        $('#cursor-ready-1').get(0).play();
+    });
+});
+
+$(document).ready(function(){
+    $("#li-2").click(function(){
+        $('#cursor-ready-2').get(0).play();
+    });
+});
+
+$(document).ready(function(){
+    $("#li-3").click(function(){
+        $('#cursor-ready-3').get(0).play();
+    });
+});
+
+
+
+$(document).ready(function(){
+    $(".liste-menu-principale").mouseenter(function(){
+        $(this).animate({"backgroundColor": "rgba(#6EEDBD)", "color":"black",  "boxShadow" :"#E51015"}, 400);
+	});
+    $(".liste-menu-principale").mouseleave(function(){
+        $(this).animate({"backgroundColor": "black", "color": "white"}, 400);
+	});
+});
+
+// BLOCK 1
+
+$(document).ready(function()
+{
+	$("#block-1").mouseenter(function(){
+		$("#block-1").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+		$("#block-1").animate({borderRadius: '5px'}, 50);
+		$(".description-1").animate({height: "100px"});
+	});
+	$("#block-1").mouseleave(function(){
+		$("#block-1").animate({ backgroundSize: '100%',borderColor: 'white' },500);
+		$(".description-1").animate({height : "50px"});
+	});
+});
+
+// BLOCK 2
+
+$(document).ready(function()
+{
+    $("#block-2").mouseenter(function(){
+        $("#block-2").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+        $(".description-2").animate({height: "100px"});
+    });
+    $("#block-2").mouseleave(function(){
+        $("#block-2").animate({ backgroundSize: '100%',borderColor: 'white' }, 500);
+        $(".description-2").animate({height : "50px"});
+    });
+});
+
+
+
+console.log(".liste-menu-principale");
+
+
+</script>
+
+</body>
+

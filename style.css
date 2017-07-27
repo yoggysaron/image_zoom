@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'ferrum';
+	src: url('css/font/ferrum');
+}
+
+body {
+
+	width: 64em;
+	margin: auto;
+}
+
+/* HEADER */
+
+#header {
+
+	height: 10%;
+	border: 3px double #6EEDBD;
+	background-color: black;
+	margin-bottom: 10px;
+	background-image: url('img/img_midgar2.jpg');
+	background-size: 100%;
+	padding-bottom: 10em;
+	background-repeat: round;
+	background-position-x: 0em;
+
+}
+
+#menu-principale {
+
+	display: flex;
+
+
+}
+
+.liste-menu-principale {
+
+	padding: 0px 20px 0px 20px;
+	margin: 0px 10px 0px 10px;
+	list-style: none;
+	border: 3px double #E51015;
+	color: white;
+	width: 120px;
+	height: 20px;
+	background-color: black;
+
+
+}
+
+form {
+	float: right;
+}
+
+
+#block-1 {
+	
+	background-image: url("img/img_cloud_01");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 500px;
+	width: 500px;
+	border:5px solid white;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+#block-2 {
+
+	background-image: url("img/img_barret_01");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 500px;
+	width: 500px;
+	border: 5px solid white;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+
+
+.description-1, .description-2 {
+
+	background-image: url("img/img_logo_FF7");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: black;
+	font-family: 'ferrum'; 
+	color: white;
+	margin: 0; 
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	border: 4px double #6EEDBD;
+	box-shadow: 0px 0px purple 10px blue;
+
+	
+}
+
+.onglet {
+	background-color: black;
+	color: white; 
+	display: inline;
+	padding: 5px 20px 5px 20px;
+	border-radius: 5px; 
+	margin: 0;
+	border-top: 4px double #6EEDBD;
+	border-left: 4px double  #6EEDBD;
+	border-right: 4px double  #6EEDBD;
+	
+
+}
+
+span {
+vertical-align: middle;
+font-size: 1.5em;
+padding-top: 10px;
+}
+
+
+/* FOOTER */
+
