@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/jquery.animate-shadow.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min"></script>
+	<style> { cursor: url(img/cursor01.cur) 0 0, pointer; } </style>
 </head>
 <body>
 
@@ -24,23 +25,26 @@
 	<header>
 		
 		<div id="header">
+			</div>
 
-			<form>
+		<!--<form>
 				<input type="text" name="" placeholder="Entrez votre recherche ici">
 				<input type="submit" name="recherche">
-			</form>
-				<ul id="menu-principale">
-					<li class="liste-menu-principale" id="li-1" rel="cursor-song-1">Final Fantasy VII</li>
-					<li class="liste-menu-principale" id="li-2" rel="cursor-song-2">Final Fantasy XII</li>
-					<li class="liste-menu-principale" id="li-3" rel="cursor-song-3">Final Fantasy XV </li>
-				</ul>	
-			</div>
+			</form> -->
+		<ul id="menu-principale">
+			<li class="liste-menu-principale" id="li-1" rel="cursor-song-1">Final Fantasy VII</li>
+			<li class="liste-menu-principale" id="li-2" rel="cursor-song-2">Final Fantasy VIII</li>
+			<li class="liste-menu-principale" id="li-3" rel="cursor-song-2">Final Fantasy X </li>
+			<li class="liste-menu-principale" id="li-4" rel="cursor-song-2">Final Fantasy XII</li>
+			<li class="liste-menu-principale" id="li-5" rel="cursor-song-3">Final Fantasy XV </li>
+
+		</ul>
 
 	</header>
 
+	<section>
 
 	<div id="block-1">
-		
 		<p class="onglet"> FIGURE </p>
 		<p class="description-1"> <span> Play art kay Cloud </span> </p>
 	</div>
@@ -48,6 +52,29 @@
 		<p class="onglet"> FIGURE </p>
 		<p class="description-2"> <span> Play art kay Barret </span></p>
 	</div>
+	<div id="block-3">
+		<p class="onglet"> FIGURE </p>
+		<p class="description-3"> <span> Play art kay Sephiroth </span></p>
+	</div>
+
+	</section>
+
+	<section>
+
+		<div id="block-4">
+			<p class="onglet"> FIGURE </p>
+			<p class="description-4"> <span> Play art kay Rouge XIII </span> </p>
+		</div>
+		<div id="block-5">
+			<p class="onglet"> FIGURE </p>
+			<p class="description-5"> <span> Play art kay Tifa </span></p>
+		</div>
+		<div id="block-6">
+			<p class="onglet"> FIGURE </p>
+			<p class="description-6"> <span> Play art kay Vincent </span></p>
+		</div>
+
+	</section>
 
 <script>
 
@@ -110,12 +137,15 @@ $(document).ready(function()
 	$("#block-1").mouseenter(function(){
 		$("#block-1").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
 		$("#block-1").animate({borderRadius: '5px'}, 50);
-		$(".description-1").animate({height: "100px"});
+		$(".description-1").animate({height: "60px"});
 	});
 	$("#block-1").mouseleave(function(){
-		$("#block-1").animate({ backgroundSize: '100%',borderColor: 'white' },500);
+		$("#block-1").animate({ backgroundSize: '100%',borderColor: 'black' },500);
 		$(".description-1").animate({height : "50px"});
 	});
+	$("#block-1").click(function(){
+	    $("#block-1").animate({})
+	})
 });
 
 // BLOCK 2
@@ -124,17 +154,76 @@ $(document).ready(function()
 {
     $("#block-2").mouseenter(function(){
         $("#block-2").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
-        $(".description-2").animate({height: "100px"});
+        $(".description-2").animate({height: "60px"});
     });
     $("#block-2").mouseleave(function(){
-        $("#block-2").animate({ backgroundSize: '100%',borderColor: 'white' }, 500);
+        $("#block-2").animate({ backgroundSize: '100%',borderColor: 'black' }, 500);
         $(".description-2").animate({height : "50px"});
     });
 });
 
 
 
-console.log(".liste-menu-principale");
+// BLOCK 3
+
+$(document).ready(function()
+{
+    $("#block-3").mouseenter(function(){
+        $("#block-3").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+        $(".description-3").animate({height: "60px"});
+    });
+    $("#block-3").mouseleave(function(){
+        $("#block-3").animate({ backgroundSize: '100%',borderColor: 'black' }, 500);
+        $(".description-3").animate({height : "50px"});
+    });
+});
+
+// BLOCK 4
+
+$(document).ready(function()
+{
+    $("#block-4").mouseenter(function(){
+        $("#block-4").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+        $(".description-4").animate({height: "60px"});
+    });
+    $("#block-4").mouseleave(function(){
+        $("#block-4").animate({ backgroundSize: '100%',borderColor: 'black' }, 500);
+        $(".description-4").animate({height : "50px"});
+    });
+});
+
+// BLOCK 5
+
+$(document).ready(function()
+{
+    $("#block-5").mouseenter(function(){
+        $("#block-5").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+        $(".description-5").animate({height: "60px"});
+    });
+    $("#block-5").mouseleave(function(){
+        $("#block-5").animate({ backgroundSize: '100%',borderColor: 'black' }, 500);
+        $(".description-5").animate({height : "50px"});
+    });
+});
+
+// BLOCK 6
+
+$(document).ready(function()
+{
+    $("#block-6").mouseenter(function(){
+        $("#block-6").animate({ backgroundSize: '110%',borderColor: '#6EEDBD' }, 500);
+        $(".description-6").animate({height: "60px"});
+    });
+    $("#block-6").mouseleave(function(){
+        $("#block-6").animate({ backgroundSize: '100%',borderColor: 'black' }, 500);
+        $(".description-6").animate({height : "50px"});
+    });
+});
+
+// POP UP BLOCK 1
+
+
+
 
 
 </script>

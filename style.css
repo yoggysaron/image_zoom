@@ -3,10 +3,12 @@
 	src: url('css/font/ferrum');
 }
 
-body {
+html {
 
-	width: 64em;
-	margin: auto;
+	background-image: url(img/img_midgar5.jpg);
+	background-repeat: round;
+	background-size: 100%;
+
 }
 
 /* HEADER */
@@ -17,17 +19,18 @@ body {
 	border: 3px double #6EEDBD;
 	background-color: black;
 	margin-bottom: 10px;
-	background-image: url('img/img_midgar2.jpg');
+	background-image: url('img/11080_banner.jpg');
 	background-size: 100%;
 	padding-bottom: 10em;
 	background-repeat: round;
 	background-position-x: 0em;
-
+	margin-bottom: unset;
 }
 
 #menu-principale {
 
 	display: flex;
+	margin-top: unset;
 
 
 }
@@ -50,18 +53,31 @@ form {
 	float: right;
 }
 
+/* BODY */
+
+body {
+
+	width: 64em;
+	margin: auto;
+
+}
+
+section {
+	padding-left: 3em;
+}
 
 #block-1 {
 	
 	background-image: url("img/img_cloud_01");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	cursor: pointer;
-	height: 500px;
-	width: 500px;
-	border:5px solid white;
+	cursor: url('img/cursor01.png'), auto;
+	height: 300px;
+	width: 300px;
+	border:5px solid black;
 	display: table-cell;
 	vertical-align: bottom;
+
 
 }
 
@@ -71,17 +87,73 @@ form {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	height: 500px;
-	width: 500px;
-	border: 5px solid white;
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
 	display: table-cell;
 	vertical-align: bottom;
 
 }
 
 
+#block-3 {
 
-.description-1, .description-2 {
+	background-image: url("img/img_sephiroth_01");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+#block-4 {
+
+	background-image: url("img/img_nanaki_02");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+#block-5 {
+
+	background-image: url("img/img_tifa_01");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+#block-6 {
+
+	background-image: url("img/img_vincent_01");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 300px;
+	width: 300px;
+	border: 5px solid black;
+	display: table-cell;
+	vertical-align: bottom;
+
+}
+
+
+.description-1, .description-2{
 
 	background-image: url("img/img_logo_FF7");
 	background-size: 20%;
@@ -96,8 +168,31 @@ form {
 	border-radius: 4px;
 	border: 4px double #6EEDBD;
 	box-shadow: 0px 0px purple 10px blue;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px	;
 
 	
+}
+
+.description-3, .description-4, .description-5, .description-6 {
+
+	background-image: url("img/img_logo_FF7AC.png");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: black;
+	font-family: 'ferrum';
+	color: white;
+	margin: 0;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	border: 4px double #6EEDBD;
+	box-shadow: 0px 0px purple 10px blue;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px	;
+
+
 }
 
 .onglet {
@@ -110,6 +205,8 @@ form {
 	border-top: 4px double #6EEDBD;
 	border-left: 4px double  #6EEDBD;
 	border-right: 4px double  #6EEDBD;
+	border-bottom-left-radius: 0px;
+
 	
 
 }
@@ -120,6 +217,7 @@ font-size: 1.5em;
 padding-top: 10px;
 }
 
+/* JSON POP UP */
 
 /* FOOTER */
 

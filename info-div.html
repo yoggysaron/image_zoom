@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="info-div.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+
+    <div id="block-popup-1">
+        <img src="">
+        <ul>
+            <li> <span> Fabriquant : </span> Square Enix </li>
+            <li> <span> Prix moyen  : </span> 149 euros </li>
+            <li> <span> Dimensions : </span> 92 mm × 42 mm × H 273 mm approx. </li>
+            <li> <span> Poids: </span> 310 g </li>
+
+        </ul>
+        <div class="popup-description-1">
+        <p id="p1">
+            <span> Description : </span> Personnage principal de cette histoire, Clad est engagé par Avalanche, un groupe écologique terroriste qui œuvre pour le bien de la Planète. Il fut, dans le passé, membre du SOLDAT, l'armée d'élite de la Shinra. Cinq ans avant le début du jeu, il avait fait équipe avec Sephiroth, le guerrier le plus fort et le plus respecté de la Planète, dans une mission peu périlleuse mais sur laquelle planent de grands mystères puisque, suite à cette expédition, la Shinra a officiellement déclaré la mort de Sephiroth. Tout au long de l'aventure, Clad va renouer avec le passé et l'affronter sous toutes ses formes, alors qu'en parallèle, il combattra pour la survie de la Planète avec ses fidèles compagnons, en particulier Tifa, son amie d'enfance.
+        </p>
+        <p id="p2">
+            <span> Play art kai Cloud </span> Figurine crée en 2017 pour la sortie de Final Fantasy remake par Square Enix au pris de 139 euros sur le site officiel.
+        </p>
+            <input type="button" value="<" id="before" class="button-div">
+            <input type="button" value=">" id="after" class="button-div">
+        </div>
+
+
+
+    </div>
+
+<script>
+
+    $(document).ready(function(){
+        $("#block-popup-1").mouseenter(function(){
+            $("#block-popup-1").animate({"borderColor" : "#6EEDBD"}, 500);
+        });
+        $("#block-popup-1").mouseleave(function(){
+            $("#block-popup-1").animate({"borderColor" : "black"}, 500);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#after").mouseenter(function(){
+            $("#after").animate({"borderColor" : "#6EEDBD", "position" : "5px"}, 500);
+        });
+    });
+    $(document).ready(function(){
+        $("#before").mouseenter(function(){
+            $("#before").animate({"borderColor" : "black"}, 500);
+        });
+    });
+
+
+
+</script>
+
+</body>
+</html>

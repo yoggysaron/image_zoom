@@ -1,0 +1,21 @@
+{
+        "ff7_figure" :
+        [
+                {
+                        "id" : "1",
+                        "figure" : "Cloud",
+                        "cover" : "./img/img_cloud_01",
+                        "price" : 149
+
+                }
+        ]
+}
+$("document").ready(function(){
+        $("#block-1").click(function(){
+        $.getJSON('ff7_figure.json', function(data){
+        $.each(data['ff7_figure'], function(key, val){
+
+})
+})
+})
+})
